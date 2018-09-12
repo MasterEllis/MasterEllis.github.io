@@ -1,9 +1,9 @@
 <h1> Простой сайт-визитка с формой заказа </h1>
-<img src="">
+<img src="images/logo/png">
 <h3>Ссылки</h3>
 <ul>
-<li>Готовый  сайт - <a href="https://dualex23.github.io/portfolio/project-ready/" rel="nofollow">смотреть</a></li>
-<li>Для самостоятельной верстки - <a href="https://github.com/dualex23/webinar">скачать</a></li>
+<li>Готовый  сайт - <a href="https://masterellis.github.io/portfolio/easy_site/" rel="nofollow">смотреть</a></li>
+<li>Для самостоятельной верстки - <a href="https://github.com/MasterEllis/easy_site_start">скачать</a></li>
 
 </ul>
 <p>Папка project из "подготовленных файлов" содержит файлы для верстки сайта. Внутри вы найдете:</p>
