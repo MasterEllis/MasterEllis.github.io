@@ -1,16 +1,12 @@
 /* border: 1px solid #f00; */
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body {
-	width: auto;
-	height: 100%;
 	background-color: #fff;
 }
-
 h1, h2, .copy {
 	font-family: "RedRingLight", sans-serif;
 	font-weight: 100;
@@ -21,15 +17,12 @@ button {
 	font-weight: 400;
 	font-style: normal;
 }
-
 .text_white {
 	color: #fff;
 }
-
 .clear {
 	clear: both;
 }
-
 /* grid */
 .container {
 	width: 100%;
@@ -37,42 +30,33 @@ button {
 	margin: 0 auto;
 }
 
-section {
-	position: relative;
-}
 input,textarea, button {
 	outline: none;
 }
-
 /* start header */
 header {
 	position: relative;
-	width: 100%;
-	height: 100px;
 	padding-top: 15px;
+	height: 100px;
 	z-index: 1;
 }
 header .logo {
 	text-align: center;
 }
 /* end header */
-
 .banner {
 	position: relative;
-	width: 100%;
 	height: 650px;
 	background: linear-gradient(0deg, #ffa8a8, #fcff00);
-	padding-top: 185px;
-	overflow: hidden;
+	padding-top: 170px;
+	overflow: hidden; /* доч.элементы не будут выходить за границу блока, как logo*/
 	z-index: 0;
 }
-.banner .banner-text {
-	width: 100%;
-	height: auto;
+.banner-text, .banner-tick, .banner-img {
 	margin: 0 auto;
 	text-align: center;
 }
-.banner .banner-text h1 {
+.banner-text h1 {
 	font-size: 40px;
 }
 .banner .banner-text h1 span {
@@ -80,67 +64,53 @@ header .logo {
 	font-weight: 400;
 	font-style: normal;
 }
-.banner .banner-img {
-	position: absolute;
-	width: 324px;
-	height: 100%;
-	bottom: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	background: url("images/phones.png");
-	background-repeat: no-repeat;
-	background-position: center 100%;
-	-webkit-background-size: auto;
-	background-size: auto;
+.banner-tick samp{
+	font-size: 5em;
+	font-weight:bold;
+	color: rgba(0, 0, 0, 0.4);
 }
+.banner-img {
+	margin-top: 35px;
+	}
 /* end section.banner */
-
-
 /* section.definition */
 .definition {
-	width: 100%;
-	height: auto;
 	padding: 105px 0;
 }
-
-.definition .definition-item {
+.definition-item {
 	display: inline-block;
 	float: left;
 	width: 33.33%;
 	padding: 0 30px;
 	text-align: center;
 }
-.definition .definition-item h3 {
+.definition-item h3 {
 	font-family: "ProximaNovaThin", sans-serif;
 	font-size: 24px;
 	font-weight: 300;
-	font-style: normal;
 	text-transform: uppercase;
 }
-.definition .definition-item .icon {
+.icon {
 	display: inline-block;
 	width: 64px;
 	height: 64px;
 	margin: 25px 0;
 }
-.definition .definition-item .icon.innovative {
+.icon.innovative {
 	background: url("images/lamp.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: auto;
 	background-size: auto;
 }
-.definition .definition-item .icon.unlimited {
+.icon.unlimited {
 	background: url("images/infinity.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: auto;
 	background-size: auto;
 }
-.definition .definition-item .icon.trendy {
+.icon.trendy {
 	background: url("images/trendy.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -149,19 +119,13 @@ header .logo {
 }
 .definition .definition-item p {
 	width: 75%;
-	height: auto;
 	margin: 0 auto;
 	font-family: "ProximaNovaLight", sans-serif;
 	font-weight: 400;
-	font-style: normal;
 	text-align: justify;
 }
 /* end section definition */
-
 section.form {
-	position: relative;
-	width: 100%;
-	height: auto;
 	padding: 105px 0;
 	text-align: center;
 	background-color: #f8f6f6;
@@ -173,10 +137,8 @@ section.form h2 {
 section.form form {
 	display: inline-block;
 	width: 60%;
-	height: auto;
 }
-form input,
-form textarea {
+form input, form textarea {
 	width: 100%;
 	font-size: 18px;
 	color: #000;
@@ -186,60 +148,43 @@ form textarea {
 	margin-bottom: 50px;
 	padding: 10px;
 }
-
-section.form form input {
+form input {
 	height: 40px;
 }
-
-section.form form textarea {
+ form textarea {
 	height: 200px;
 	resize: none;
 }
-
 .btn {
 	display: inline-block;
-	width: auto;
 	height: 45px;
 	font-size: 18px;
 	text-transform: uppercase;
-	border-radius: 15px;
-	border: none;
+	border-radius: 10px;
 	padding: 10px 10%;
 	text-align: center;
-	transition: 0.4s;
-	background-size: 200% auto;
-	border-radius: 10px;
+	border:none;
+	/* colorzilla - создание градиента */
 	background-image: linear-gradient(to right, #ffaaaa 0%, #ffff00 51%, #ffaaaa 100%);
+	background-size: 200% auto; /* для перехода слева направо при наведении */
+	transition: 0.4s;
 	cursor: pointer;
 }
 .btn:hover {
 	background-position: right center;
 }
-
 /* end section.form */
-
 /* footer */
 footer {
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
-	width: 100%;
+	align-items: center; */
+	text-align: center;
 	height: 92px;
 	background-color: #ffa8a8;
 	text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer span{
+	display: inline-block;
+	margin:30px 0;
+}

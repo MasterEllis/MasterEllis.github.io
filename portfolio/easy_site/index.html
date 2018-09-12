@@ -5,6 +5,7 @@
 		<!-- подключаем стили -->
 		<link rel="stylesheet" type="text/css" href="fonts.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="responsive.css">
 	</head>
 	<body>
 
@@ -21,9 +22,17 @@
 				<section class="banner">
 					<div class="container">
 						<div class="banner-text">
-							<h1>We are <span class="text_white">almost</span> there</h1>
+							<h1>До конца <span class="text_white">дня</span> осталось:</h1>
 						</div>
-						<div class="banner-img"></div>
+						<div class="banner-tick">
+
+									<samp id="h"></samp>
+									<samp id="m"></samp>
+									<samp id="s"></samp>
+
+							</div>
+
+						<div class="banner-img"><img src="images/phones.png" alt=""></div>
 					</div>
 				</section>
 
@@ -69,5 +78,6 @@
 		<footer>
 				<span class="copy">© All Rights Reserved. Made by Ginnera</span>
 		</footer>
+		<script src="js/main.js"></script>
 	</body>
 </html>

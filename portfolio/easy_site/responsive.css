@@ -1,0 +1,20 @@
+
+@media (min-width: 300px) and (max-width: 768px) {
+  section.form form {
+    width: 90%;
+  }
+  .definition-item {
+    	width: 100%;
+  }
+
+}
+/* >=768px) */
+@media (min-width: 768px) and (max-width: 1200px){
+  section.form form {
+    width: 80%;
+  }
+  .definition-item {
+    	width: 90%;
+  }
+
+  }
