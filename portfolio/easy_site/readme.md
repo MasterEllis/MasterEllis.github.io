@@ -1,5 +1,5 @@
 <h1> Простой сайт-визитка с формой заказа </h1>
-<img src="images/logo/png">
+<img src="images/logo.png">
 <h3>Ссылки</h3>
 <ul>
 <li>Готовый  сайт - <a href="https://masterellis.github.io/portfolio/easy_site/" rel="nofollow">смотреть</a></li>
