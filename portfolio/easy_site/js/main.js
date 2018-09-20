@@ -2,7 +2,9 @@ var h=document.getElementById("h");
 var m=document.getElementById("m");
 var s=document.getElementById("s");
 
-setInterval(function(){
+setInterval(tic,1000);
+
+function tic(){
 var d=new Date();
 var hours=23-d.getHours();
 if (hours<10){
@@ -19,4 +21,5 @@ if(sec<10){
 h.innerHTML=hours+":";
 m.innerHTML=min+":";
 s.innerHTML=sec;
-},1000)
+}
+
